@@ -1,0 +1,26 @@
+/* Basic styling for clarity */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.section {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.clickSection {
+  background-color: #ffd700; /* Light Goldenrod Yellow */
+}
+
+.mouseoverSection {
+  background-color: #ffa07a; /* Light Salmon */
+}
+
+.inputChangeSection {
+  background-color: #98fb98; /* Pale Green */
+}
+
+.formValidationSection {
+  background-color: #add8e6; /* Light Blue */
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>DOM Event Listeners/Handlers</title>
+  </head>
+  <body>
+    <!-- Click Event Section -->
+    <div class="section clickSection">
+      <h2>Click Event</h2>
+      <button id="clickButton">Click Me</button>
+      <div id="clickResult"></div>
+    </div>
+
+    <!-- Mouseover Event Section -->
+    <div class="section mouseoverSection">
+      <h2>Mouseover Event</h2>
+      <div id="mouseoverDiv">Hover over me</div>
+      <div id="mouseoverResult"></div>
+    </div>
+
+    <!-- Input Change Event Section -->
+    <div class="section inputChangeSection">
+      <h2>Input Change Event</h2>
+      <input type="text" id="inputField" placeholder="Type something..." />
+      <div id="inputChangeResult"></div>
+    </div>
+
+    <!-- Form Validation and Submit Event Section -->
+    <div class="section formValidationSection">
+      <h2>Form Validation and Submit Event</h2>
+      <form id="sampleForm">
+        <input type="text" required />
+        <button type="submit">Submit</button>
+      </form>
+      <div id="formValidationResult"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

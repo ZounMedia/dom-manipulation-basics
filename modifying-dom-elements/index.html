@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Modifying DOM Elements</title>
+  </head>
+  <body>
+    <!-- Method 1: innerHTML -->
+    <div class="section method1">
+      <h2>innerHTML</h2>
+      <div id="innerHTMLResult">Original Content</div>
+    </div>
+
+    <!-- Method 2: textContent -->
+    <div class="section method2">
+      <h2>textContent</h2>
+      <div id="textContentResult">Original Content</div>
+    </div>
+
+    <!-- Method 3: setAttribute -->
+    <div class="section method3">
+      <h2>setAttribute</h2>
+      <div id="setAttributeResult" class="originalClass">
+        Element with Original Class
+      </div>
+    </div>
+
+    <!-- Method 4: style -->
+    <div class="section method4">
+      <h2>style</h2>
+      <div id="styleResult">Element with Original Style</div>
+    </div>
+
+    <!-- Method 5: classList -->
+    <div class="section method5">
+      <h2>classList</h2>
+      <div id="classListResult">Element with Original Class</div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="index.js"></script>
+  </body>
+</html>
