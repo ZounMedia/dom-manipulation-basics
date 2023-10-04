@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  color: hsl(0, 36%, 70%);
+  background: linear-gradient(221deg, #fff1f1 2.6%, #fff 96.36%);
+  display: flex;
+  justify-content: center;
+}
+body .container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+}
+body .container header {
+  height: 40%;
+}
+body .container header .logo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 83px;
+  padding: 0 32px;
+}
+body .container header .logo img {
+  width: 100px;
+  height: 21px;
+}
+body .container header .hero {
+  width: 100%;
+  height: calc(100% - 83px);
+}
+body .container header .hero img {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  body .container header {
+    height: 50%;
+  }
+}
+body .container main {
+  height: 60%;
+}
+body .container main section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .container main section .heading,
+body .container main section .description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container main section .heading {
+  height: 126px;
+}
+body .container main section .heading h1 {
+  width: 311px;
+  text-align: center;
+  font-family: Josefin Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 42px; /* 105% */
+  letter-spacing: 10.825px;
+  text-transform: uppercase;
+}
+body .container main section .heading h1 span {
+  color: hsl(0, 6%, 24%);
+  font-weight: 600;
+}
+body .container main section .description {
+  margin-top: 16px;
+  min-height: 88px;
+}
+body .container main section .description p {
+  max-width: 311px;
+  text-align: center;
+  color: hsl(0, 36%, 70%);
+  font-size: 14px;
+  line-height: 28px; /* 175% */
+}
+body .container main section form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 311px;
+  height: 48px;
+  margin-top: 16px;
+  padding-left: 24px;
+  border-radius: 28px;
+  border: 1px solid hsl(0, 36%, 70%);
+}
+body .container main section form input {
+  width: 50%;
+  height: 80%;
+  border: none;
+  outline: none;
+  color: hsl(0, 6%, 24%);
+  background: transparent;
+  font-size: 14px;
+  line-height: 28px; /* 200% */
+}
+body .container main section form input::placeholder {
+  color: hsl(0, 36%, 70%);
+  opacity: 1; /* Firefox */
+}
+body .container main section form input::-ms-input-placeholder {
+  /* Edge 12 -18 */
+  color: hsl(0, 36%, 70%);
+}
+body .container main section form .btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+}
+body .container main section form .btn-group img.error {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  display: none;
+  left: -20px;
+}
+body .container main section form .btn-group img.error.active {
+  display: block;
+}
+body .container main section form .btn-group button {
+  width: 64px;
+  height: 48px;
+  position: relative;
+  background: transparent;
+  border: none;
+}
+body .container main section form .btn-group button img {
+  width: 100%;
+  height: 100%;
+  margin-top: 11px;
+  transform: scale(1.8);
+}
+body .container main section form .btn-group button:hover {
+  cursor: pointer;
+}
+body .container main section form span {
+  display: none;
+  margin-top: 8px;
+  color: hsl(0, 93%, 68%);
+  font-size: 13px;
+}
+body .container main section form span.active {
+  display: block;
+}
+body .container main section form.active {
+  border: 2px solid hsl(0, 93%, 68%);
+}
+@media (min-width: 768px) {
+  body .container main {
+    height: 50%;
+  }
+  body .container main section .heading {
+    height: 192px;
+  }
+  body .container main section .heading h1 {
+    width: 444px;
+    font-size: 64px;
+    line-height: 64px; /* 100% */
+    letter-spacing: 17.321px;
+  }
+  body .container main section .description {
+    margin-top: 16px;
+    min-height: 88px;
+  }
+  body .container main section .description p {
+    max-width: 444px;
+    font-size: 16px;
+    line-height: 28px; /* 175% */
+  }
+  body .container main section form {
+    width: 400px;
+    height: 56px;
+  }
+  body .container main section form input {
+    font-size: 16px;
+    line-height: 28px; /* 200% */
+  }
+  body .container main section form .btn-group {
+    width: 50%;
+  }
+  body .container main section form .btn-group img.error {
+    left: 0px;
+  }
+  body .container main section form .btn-group button {
+    width: 100px;
+    height: 56px;
+    right: -15px;
+  }
+  body .container main section form .btn-group button img {
+    margin-top: 14px;
+  }
+}
+body .container .hero-desktop {
+  display: none;
+}
+@media (min-width: 1440px) {
+  body .container header {
+    width: calc(100% - 610px);
+    height: 15%;
+  }
+  body .container header .logo {
+    height: 100%;
+    padding: 74px 0 74px 156px;
+  }
+  body .container header .logo img {
+    width: 158px;
+    height: 33px;
+  }
+  body .container header .hero {
+    display: none;
+  }
+  body .container main {
+    width: calc(100% - 610px);
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .container main section {
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    padding: 300px 156px;
+    align-items: flex-start;
+  }
+  body .container main section .heading {
+    margin-top: -100px;
+  }
+  body .container main section .heading h1 {
+    text-align: left;
+  }
+  body .container main section .description {
+    margin-top: 25px;
+  }
+  body .container main section .description p {
+    text-align: left;
+  }
+  body .container main section form {
+    margin-top: 30px;
+    width: 444px;
+  }
+  body .container main section form .btn-group img.error {
+    margin-right: 0;
+  }
+  body .container main section form .btn-group button {
+    right: -15px;
+  }
+  body .container .hero-desktop {
+    width: 610px;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+  body .container .hero-desktop img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  body .container {
+    position: relative;
+    max-width: 100vw;
+  }
+  body .container main,
+  body .container header {
+    width: 50%;
+    padding-left: 2%;
+  }
+  body .container .hero-desktop {
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

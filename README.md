@@ -29,6 +29,8 @@ HTML DOM elements can be selected from the browser in a couple of different ways
 
 - querySelectorAll --> returns all elements that match a specific CSS selector and returns them in an array → let elements = document.querySelectorAll(".myClass");
 
+HTML, CSS, and JS code examples can be found selecting-dom-elements folder. You can also view the examples in the browser by openning up the index.html file in your browser of choice.
+
 ## Manipulating DOM elements
 
 HTML DOM elements can be manipulated in the browser in a couple of different ways:
@@ -53,13 +55,15 @@ HTML DOM elements can be manipulated in the browser in a couple of different way
 
 - Event Handling --> element.addEventListener("click", function() { // Code to be executed when the element is clicked});
 
+HTML, CSS, and JS code examples can be found manipulating-dom-elements folder. You can also view the examples in the browser by openning up the index.html file in your browser of choice.
+
 ## DOM Event Listeners/Handlers
 
 - Click Event Handler
 
 ```js
 // Get the element
-var button = document.getElementById("myButton");
+let button = document.getElementById("myButton");
 
 // Define the event handler function
 function handleClick() {
@@ -74,7 +78,7 @@ button.addEventListener("click", handleClick);
 
 ```js
 // Get the element
-var button = document.getElementById("myButton");
+let button = document.getElementById("myButton");
 
 // Define the event handler function
 function handleClick() {
@@ -89,16 +93,38 @@ button.addEventListener("click", handleClick);
 
 ```js
 // Get the form element
-var form = document.getElementById("myForm");
+let form = document.getElementById("myForm");
 
 // Define the event handler function
 function handleSubmit(event) {
   event.preventDefault(); // Prevents the form from actually submitting
 
-  var input = document.getElementById("textInput");
+  let input = document.getElementById("textInput");
   alert("Form Submitted with value: " + input.value);
 }
 
 // Attach the event handler to the form submission event
 form.addEventListener("submit", handleSubmit);
 ```
+
+HTML, CSS, and JS code examples can be found event-handlers folder. You can also view the examples in the browser by openning up the index.html file in your browser of choice.
+
+## Full Webpage Examples
+
+You will find two full webpage examples on how to use DOM manipulation in real projects in the website-examples folder. Each webpage example will contain two folders, a start and a complete. The complete folder contains all the neccessary code to make the webpage interractive, while the start examples includes everything except the Javascript code. Use the start folder as your playground to practive DOM manipulation and refer to the complete folder as your reference on how to manipulate the DOM
+
+### Base Apparel webpage
+
+#### Screenshot
+
+![](./website-examples/base-apparel/complete/assets/img/screenshot.jpeg)
+
+This project is a landing page example for an apparel company. Javascript is used for validating the form input when a use clicks the submit button. The JS code validates that the input is not blank, that the email is valid(contains an '@' symbol and a '.com'), and displays an error if the validation fails.
+
+### interactive Rating Component webpage
+
+#### Screenshot
+
+![](./website-examples/interactive-rating-component/complete/assets/img/screenshot.jpeg)
+
+This project is a rating component example. Each time the user clicks on a rating, that rating is set to active and it's value is stored and then used on the next component when the user clicks the submit button. Take a look at the way the two components are displayed/removed from the UI based on updating their classes with Javascript.

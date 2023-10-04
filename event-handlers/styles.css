@@ -17,6 +17,11 @@ body {
   background-color: #ffa07a; /* Light Salmon */
 }
 
+.mouseoverSection:hover {
+  cursor: pointer;
+  background-color: pink; /* Light Salmon */
+}
+
 .inputChangeSection {
   background-color: #98fb98; /* Pale Green */
 }
