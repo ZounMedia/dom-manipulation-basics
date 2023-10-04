@@ -17,7 +17,7 @@ The DOM is a programming interface for web documents. It represents the structur
 
 ## Selecting DOM elements
 
-HTML DOM elements can be selected from the browser in a couple of different ways
+HTML DOM elements can be selected from the browser in a couple of different ways:
 
 - getElementById --> used to access an element with a specific ID → let elementById = document.getElementById("byIdResult");
 
@@ -30,6 +30,8 @@ HTML DOM elements can be selected from the browser in a couple of different ways
 - querySelectorAll --> returns all elements that match a specific CSS selector and returns them in an array → let elements = document.querySelectorAll(".myClass");
 
 ## Manipulating DOM elements
+
+HTML DOM elements can be manipulated in the browser in a couple of different ways:
 
 - Changing Content --> You can change the content of an element using innerHTML → element.innerHTML = "New Content";
 
@@ -50,3 +52,53 @@ HTML DOM elements can be selected from the browser in a couple of different ways
   - Removing → parentElement.removeChild(childElement);
 
 - Event Handling --> element.addEventListener("click", function() { // Code to be executed when the element is clicked});
+
+## DOM Event Listeners/Handlers
+
+- Click Event Handler
+
+```js
+// Get the element
+var button = document.getElementById("myButton");
+
+// Define the event handler function
+function handleClick() {
+  alert("Button Clicked!");
+}
+
+// Attach the event handler to the click event
+button.addEventListener("click", handleClick);
+```
+
+- Mouseover and Mouseout Event Handlers
+
+```js
+// Get the element
+var button = document.getElementById("myButton");
+
+// Define the event handler function
+function handleClick() {
+  alert("Button Clicked!");
+}
+
+// Attach the event handler to the click event
+button.addEventListener("click", handleClick);
+```
+
+- Form Submission Event Handler
+
+```js
+// Get the form element
+var form = document.getElementById("myForm");
+
+// Define the event handler function
+function handleSubmit(event) {
+  event.preventDefault(); // Prevents the form from actually submitting
+
+  var input = document.getElementById("textInput");
+  alert("Form Submitted with value: " + input.value);
+}
+
+// Attach the event handler to the form submission event
+form.addEventListener("submit", handleSubmit);
+```
