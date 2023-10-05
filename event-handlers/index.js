@@ -14,6 +14,7 @@ mouseoverDiv.addEventListener("mouseover", function () {
 
 // Input Change Event
 var inputField = document.getElementById("inputField");
+console.log(inputField);
 inputField.addEventListener("input", function () {
   var inputChangeResult = document.getElementById("inputChangeResult");
   inputChangeResult.textContent = "Input changed: " + inputField.value;
