@@ -26,6 +26,7 @@ sampleForm.addEventListener("submit", function (event) {
   event.preventDefault(); // Prevents form submission and page refresh
   var formValidationResult = document.getElementById("formValidationResult");
   var input = sampleForm.querySelector("input");
+
   if (input.value.trim() === "") {
     formValidationResult.textContent = "Please enter a value!";
   } else {

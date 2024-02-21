@@ -7,7 +7,7 @@ const form = document.querySelector("form");
 
 //add click event listener to button
 submitBtn.addEventListener("click", (event) => {
-  //   console.log({ input, submitBtn, errorText, inputValue: input.value });
+  console.log({ input, submitBtn, errorText, inputValue: input.value });
 
   //reset error text value to empty
   errorText.classList.remove("active");
