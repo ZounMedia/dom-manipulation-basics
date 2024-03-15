@@ -9,6 +9,11 @@ body {
   border: 1px solid #ccc;
 }
 
+.modifiedClass {
+  background-color: black;
+  color: white;
+}
+
 .method1 {
   background-color: #ffd700; /* Light Goldenrod Yellow */
 }
@@ -27,4 +32,14 @@ body {
 
 .method5 {
   background-color: #ff6347; /* Tomato */
+}
+
+.lastOriginalClass {
+  background-color: transparent;
+  color: white;
+}
+
+.newClass {
+  background-color: purple;
+  color: yellow;
 }
