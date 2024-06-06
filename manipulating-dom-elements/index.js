@@ -1,6 +1,6 @@
 // Method 1: innerHTML
 let innerHTMLResult = document.getElementById("innerHTMLResult");
-console.log(innerHTMLResult);
+console.log({ innerHTMLResult });
 // innerHTMLResult.innerHTML = "<strong>Modified</strong> Content with innerHTML";
 
 // Method 2: textContent
