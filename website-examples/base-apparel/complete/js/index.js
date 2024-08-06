@@ -13,6 +13,9 @@ submitBtn.addEventListener("click", (event) => {
   errorText.classList.remove("active");
   errorIcon.classList.remove("active");
 
+  //reset error styling for form
+  form.classList.remove("active");
+
   if (
     input.value.length === 0 ||
     !(input.value.includes("@") && input.value.includes(".com"))
@@ -22,6 +25,7 @@ submitBtn.addEventListener("click", (event) => {
     form.classList.add("active");
     //prevent form from submitting
     event.preventDefault();
+    // alert("Please enter a valid email");
     return;
   }
 
