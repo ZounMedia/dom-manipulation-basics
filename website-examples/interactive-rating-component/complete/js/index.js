@@ -7,6 +7,7 @@ const options = document.querySelectorAll(".option");
 //loop over actions and add an click event listener
 options.forEach((option) =>
   option.addEventListener("click", () => {
+    console.log({ option });
     //find active option and remove active class
     const activeOption = options[parseInt(optionSelected) - 1];
     activeOption.classList.remove("active");
