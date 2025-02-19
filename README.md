@@ -6,6 +6,10 @@ This repo shows some exaples of how to select and manipulate HTML DOM elements a
 
 The DOM is a programming interface for web documents. It represents the structure of a document as a tree of objects, where each object corresponds to a part of the document, such as elements, attributes, and text. JavaScript can manipulate the DOM, allowing developers to change the content, structure, and style of a webpage in real time.
 
+Below is a picture of the DOM tree structure:
+
+![](./dom-tree.png)
+
 ## Key DOM manipulation features
 
 - Element Selection --> DOM elements can be selected by id, class name, tag name, and via css selectors
