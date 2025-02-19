@@ -34,7 +34,9 @@ let sampleForm = document.getElementById("sampleForm");
 //   if (input.value.trim() === "") {
 //     //trim() removes whitespace from both ends of a string
 //     formValidationResult.textContent = "Please enter a value!";
+//     formValidationResult.style.color = "red";
 //   } else {
+//     formValidationResult.style.color = "green";
 //     formValidationResult.textContent =
 //       "Form submitted with value: " + input.value;
 //   }
